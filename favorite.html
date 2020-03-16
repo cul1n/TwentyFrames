@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,actori,directori,recenzii">
+    <meta name="description" content="Un catalog de filme">
+    <meta charset="UTF-8">
+    <style>
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+            td:empty {
+                padding: 20px;
+            }
+
+        table {
+            border-collapse: collapse;
+            empty-cells: show;
+        }
+    </style>
+    <title>Catalog de filme</title>
+</head>
+
+<body>
+    <header>
+        <h1>Twenty Frames</h1>
+        <nav>
+            <ul class="meniu_dropdown">
+                <li class="item"><a href="index.html">Acasa</a></li>
+                <li class="item"><a href="lista_Filme.html">Lista Filme</a></li>
+                <li class="item"><a href="watchlist.html">Watchlist</a></li>
+                <li class="item"><a href="favorite.html">Favorite</a></li>
+                <li>
+                    <div class="item">
+                        Regizori
+                    </div>
+                    <ul class="dropdown_content">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Filme Favorite</h2>
+
+            <p>Aici poti adauga filmele tale favorite. </p>
+            <button>Adauga</button>
+            <p></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nr. de ordine</th>
+                        <th>Nume filme</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Parsite</td>
+                        <td>10/10</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Lord of The Rings: Return of The King</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Taxi Driver</td>
+                        <td>9/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Site facut de Hirhui Calin</p>
+    </footer>
+</body>
+</html>
