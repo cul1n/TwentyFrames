@@ -1,0 +1,70 @@
+body{
+    background-color:lavender;
+}
+
+header {
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.meniu_dropdown {
+    display: block;
+    list-style-type: none;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.dropdown_content { /*meniul din drop down */
+    display: none;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+    color: white;
+    background-color: #bbddf9;
+    text-align: center;
+    padding: 0%;
+    border: 1px solid #85bcea;
+}
+
+
+ul > li:hover > ul {
+    display: block;
+}
+
+nav > ul > li {
+    vertical-align: top;
+    display: inline-block;
+}
+
+    nav > ul > li > ul > li { /* fiecare item din meniul drop down */
+        padding: 2%;
+        border: 1px solid #a8d1f4;
+    }
+
+        nav > ul > li > ul > li:hover {
+            background-color: #85c1f2;
+        }
+
+ul > li:nth-child(even) {
+    background-color: #9ecef7;
+}
+
+ul > li:nth-child(odd) {
+    background-color: #afdaff;
+}
+
+.item {
+    color: white;
+    border: 1px solid #91c1ea;
+    padding: 20px;
+    font-size: 1.1vw;
+}
+
+    .item:hover {
+        background-color: #85bcea;
+    }
