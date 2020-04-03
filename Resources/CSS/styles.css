@@ -1,0 +1,121 @@
+body { /*serenity*/
+    background-color: #6CA0B6;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #437D95;
+}
+
+.flex-container > div {
+        background-color: #f1f1f1;
+        width: 10%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border: 2.5px solid black;
+}
+
+.imag{
+    height: 100%;
+    width: 100%;
+  
+}
+header {
+    border: 3px solid #437D95;
+    background-color: #548BA2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.meniu_dropdown {
+    display: block;
+    list-style-type: none;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.dropdown_content { /*meniul drop down */
+    display: none;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+    color: white;
+    background-color: #bbddf9;
+    text-align: center;
+    padding: 0%;
+    border: 1px solid #85bcea;
+    width: 6%;
+}
+
+
+ul > li:hover > ul {
+    display: block;
+}
+
+nav > ul > li {
+    vertical-align: top;
+    display: inline-block;
+}
+
+nav > ul > li > ul > li { /* fiecare item din meniul drop down */
+     padding: 2%;
+     border: 1px solid #a8d1f4;
+}
+
+nav > ul > li > ul > li:hover {
+     background-color: #85c1f2;
+}
+
+ul > li:nth-child(even) {
+    background-color: #9ecef7;
+}
+
+ul > li:nth-child(odd) {
+    background-color: #afdaff;
+}
+
+.item {
+    color: white;
+    border: 1px solid #91c1ea;
+    padding: 20px;
+    font-size: 1.1vw;
+}
+
+.item:hover {
+     background-color: #85bcea;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1500px) {
+
+        .flex-container > div {
+            width: 70%;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    #video {
+        width: 70%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+      
+    }
+
+        .flex-container > div {
+            width: 50%;
+        }
+
+}

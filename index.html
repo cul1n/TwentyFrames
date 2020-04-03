@@ -1,46 +1,75 @@
 ﻿<!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="Resources/CSS/styles.css">
     <meta name="author" content="Hirhui Calin">
-    <meta name="keywords" content="Filme,actori,directori,recenzii">
-    <meta name="description" content="Un catalog de filme">
+    <meta name="keywords" content="Filme,cinematografie,popular,trailer,top,istoric">
+    <meta name="description" content="Pagina principala este un hub pentru pasionatii de cinematografie.">
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog de filme</title>
 </head>
 	
-    <body>
+    <body> 
+
     <header>
         <h1>Twenty Frames</h1>
-		<nav>
+        <nav>
             <ul class="meniu_dropdown">
                 <li class="item"><a href="index.html">Acasa</a></li>
                 <li class="item"><a href="lista_Filme.html">Lista Filme</a></li>
                 <li class="item"><a href="watchlist.html">Watchlist</a></li>
                 <li class="item"><a href="favorite.html">Favorite</a></li>
-                <li> <div class="item"> 
-                    Regizori </div>
+                <li>
+                    <div class="item">
+                        Regizori
+                    </div>
                     <ul class="dropdown_content">
-                        <li>1</li>
-                        <li>2</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Quentin_Tarantino">Tarantino</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve">Villeneuve</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a></li>
                     </ul>
                 </li>
             </ul>
-    </nav>
+        </nav>
     </header>
-	
+
     <main>
         <section>
             <h2>Istoric</h2>
 
-            <p>Sunt un om simplu caruia ii plac filmele.</p>
+            <p>Acest site este facut cu scopul de a aduce mai aproape oamenii pasionati de cinematografie</p>
         </section>
-		
+        <section>
+            <h2>Filme Populare Din Ultimele 3 Luni</h2>
+            <div class="flex-container">
+                <div><img class="imag" src="Resources/Images/Parasite_poster.jpg" title="Parasite (2019)" alt="Parasite"></div>
+                <div><img class="imag" src="Resources/Images/Irishman_poster.jpg" title="The Irishman (2019)" alt="The Irishman"></div>
+                <div><img class="imag" src="Resources/Images/Jojo_poster.jpg" title="Jojo Rabbit (2019)" alt="Jojo Rabbit"></div>
+                <div><img class="imag" src="Resources/Images/Joker_poster.jpg" title="Joker (2019)" alt="Joker"></div>
+                <div><img class="imag" src="Resources/Images/1917_poster.jpg" title="1917 (2020)" alt="1917"></div>
+                <div><img class="imag" src="Resources/Images/Lighthouse_poster.jpg" title="The Lighthouse (2019)" alt="The Lighthouse"></div>
+            </div>
+        </section>
+            <br />
+            <br />
+       <section>
+           <h2>Trailer-ul saptamanii</h2>
+              <iframe id="video" width="640" height="360"
+                  src="https://www.youtube.com/embed/LdOM0x0XDMo">
+              </iframe>
+           <p>Am ales in aceasta saptamana un trailer pentru filmul "Tenet".</p>
+       </section>
+
+        <div>
+            <p><a href="#Top">Inceputul paginii.</a></p>
+        </div>
     </main>
-	
+
     <footer>
         <p>Site facut de Hirhui Calin</p>
+
     </footer>
-    </body>
+</body>
 </html>
