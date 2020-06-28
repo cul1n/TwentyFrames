@@ -1,0 +1,7 @@
+{"lastId":6,"filme":[
+	{"id":1,"nume":"Whiplash","regizor":"Damien Chazelle","an":"2014","durata":"106","poza":"whiplashp"},
+	{"id":2,"nume":"There Will Be Blood","regizor":"Paul Thomas Anderson","an":"2007","durata":"158","poza":"bloodp"},
+	{"id":3,"nume":"Taxi Driver","regizor":"Martin Scorsese","an":"1976","durata":"114","poza":"taxip"},
+	{"id":4,"nume":"Psycho","regizor":"Alfred Hitchcock","an":"1960","durata":"109","poza":"psychop"},
+	{"id":5,"nume":"Goodfellas","regizor":"Martin Scorsese","an":"1990","durata":"145","poza":"goodp"}]
+	}

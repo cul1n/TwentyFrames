@@ -1,0 +1,38 @@
+<script src="js/marcaj.js"></script>
+<header>
+    <h1>Twenty Frames</h1>
+    <nav>
+        <ul class="meniudd">
+            <li class="item"><a href="index">Acasa</a></li>
+            <li class="item"><a href="lista_Filme">Lista Filme</a></li>
+            <li class="item"><a href="watchlist">Watchlist</a></li>
+            <li class="item"><a href="favorite">Favorite</a></li>
+			<li class="item"><a href="register">Inregistrare</a></li>
+            <li>
+                <div class="item">
+                    Regizori
+                </div>
+                <ul class="ddcontent">
+                    <li><a href="https://en.wikipedia.org/wiki/Quentin_Tarantino">Tarantino</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve">Villeneuve</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	<% if(!locals.username) { %>
+	<form method="post" action="/login">
+		<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			<input type="submit" value="OK">
+	</form>
+	<% } else { %>
+		Logat: <%= locals.username %>
+		<a href="/logout"> Logout</a>
+	<% } %>
+	<hr/>
+</header>

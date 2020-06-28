@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,cinematografie,popular,trailer,top,istoric">
+    <meta name="description" content="Pagina principala este un hub pentru pasionatii de cinematografie.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/ejs.min.js"></script>
+	<script src="js/datanastere.js"></script>
+    <title>Catalog-de-filme</title>
+</head>
+	
+    <body> 
+	
+	<%- include("../fragmente/header")  %>
+    
+
+    <main>
+		<div>
+			<label> Introduce Data Nasterii:
+				<input id="nastere" type="text" value="dd#mm#yyyy">
+			</label>
+			<button id="nastere2">OK</button>
+			<p id ="rez"></p>
+		</div>
+        <section>
+            <h2>Istoric</h2>
+
+            <p>Acest site este facut cu scopul de a aduce mai aproape oamenii pasionati de cinematografie</p>
+        </section>
+        <section>
+            <h2>Filme Populare Din Ultimele 3 Luni</h2>
+            <div class="flex-container">
+                <div><img class="imag" src="/Images/Parasite_poster.jpg" title="Parasite (2019)" alt="Parasite"></div>
+                <div><img class="imag" src="/Images/Irishman_poster.jpg" title="The Irishman (2019)" alt="The Irishman"></div>
+                <div><img class="imag" src="/Images/Jojo_poster.jpg" title="Jojo Rabbit (2019)" alt="Jojo Rabbit"></div>
+                <div><img class="imag" src="/Images/Joker_poster.jpg" title="Joker (2019)" alt="Joker"></div>
+                <div><img class="imag" src="/Images/1917_poster.jpg" title="1917 (2020)" alt="1917"></div>
+                <div><img class="imag" src="/Images/Lighthouse_poster.jpg" title="The Lighthouse (2019)" alt="The Lighthouse"></div>
+            </div>
+        </section>
+            <br />
+            <br />
+       <section>
+           <h2>Trailer-ul saptamanii</h2>
+              <iframe id="video" width="640" height="360"
+                  src="https://www.youtube.com/embed/LdOM0x0XDMo">
+              </iframe>
+           <p>Am ales in aceasta saptamana un trailer pentru filmul "Tenet".</p>
+       </section>
+        <div>
+            <p><a href="#Top">Inceputul paginii.</a></p>
+        </div>
+    </main>
+
+	<%- include("../fragmente/footer")  %>
+</body>
+</html>

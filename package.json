@@ -1,0 +1,23 @@
+{
+  "name": "idfilme",
+  "version": "1.0.1",
+  "description": "Proiect tehnici web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Site",
+    "filme",
+    "cinema",
+    "cinematografie"
+  ],
+  "author": "Hirhui Calin",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2"
+  }
+}

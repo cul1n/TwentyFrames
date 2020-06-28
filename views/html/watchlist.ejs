@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/tabele.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,cinematografie,watchlist,recenzii,rating,lista">
+    <meta name="description" content="Aceasta pagina serveste drept o lista pentru filme care urmeaza sa fie vizionate.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/script3.js"></script>
+    <title>Filme de vazut</title>
+</head>
+
+<body>
+
+	<%- include("../fragmente/header")  %>
+
+    <main>
+        <section>
+            <h2>Watchlist</h2>
+
+            <p>Aici poti adauga filme care doresti sa le vizionezi in viitor.</p>
+            <button>Adauga</button>
+            <p></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nr. de ordine</th>
+                        <th>Nume filme</th>
+                        <th>Data adaugarii</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Parsite</td>
+                        <td>8-MAR-2020</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Iron-Man</td>
+                        <td>10-IUL-2019</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Memento</td>
+                        <td>29-FEB-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+	<%- include("../fragmente/footer")  %>
+	
+</body>
+</html>

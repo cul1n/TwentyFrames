@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,cinematografie,popular,trailer,top,istoric">
+    <meta name="description" content="Pagina principala este un hub pentru pasionatii de cinematografie.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/script3.js"></script>
+    <title>Catalog de filme</title>
+</head>
+	
+    <body> 
+	
+	<%- include("../fragmente/header")  %>
+    
+
+    <main>
+        <section>
+            <h2>Inregistrare</h2>
+
+                <form method="post" action="/inreg" >
+					  <label for="username">Username:</label><br>
+					  <input type="text" id="username" name="username" value=""><br>
+					  
+					  <label for="=nume">Nume:</label><br>
+					  <input type="text" id="nume" name="nume" value=""><br>
+					  
+					  <label for="=email">Email:</label><br>
+					  <input type="text" id="email" name="email" value=""><br>
+					  
+					  <label for="parola">Password:</label><br>
+					  <input type="password" id="parola" name="parola" value=""><br>
+					  
+					  <p>Regiune: </p>
+					  <input type="radio" id="europa" name="regiune" value="europa">
+					  <label for="europa">Europa</label><br>
+					  <input type="radio" id="america" name="regiune" value="america">
+					  <label for="america">America</label><br>
+					  <input type="radio" id="africa" name="regiune" value="africa">
+					  <label for="africa">Africa</label><br>
+					  <input type="radio" id="asia" name="regiune" value="asia">
+					  <label for="asia">Asia</label><br>
+					  
+					  <label for="=gen">Gen favorit:</label><br>
+					  <input type="text" id="gen" name="gen" value=""><br>
+					  <input type="submit" value="Submit">
+					  
+                </form>
+        </section>
+        
+
+        <div>
+            <p><a href="#Top">Inceputul paginii.</a></p>
+        </div>
+    </main>
+
+	<%- include("../fragmente/footer")  %>
+</body>
+</html>

@@ -1,40 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="Resources/Images/favicon2.ico">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/galerie.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/galerie.css">
     <meta name="author" content="Hirhui Calin">
     <meta name="keywords" content="Filme,cinematografie,comedie,umor,vechi,istoric">
     <meta name="description" content="Aceasta pagina prezinta un scurt istoric pentru filmele de comedie.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/ejs.min.js"></script>
+	<script src="js/quiz.js"></script>
     <title>Comedie</title>
 </head>
 	
     <body> 
 
-    <header>
-        <h1>Twenty Frames</h1>
-        <nav>
-            <ul class="meniu_dropdown">
-                <li class="item"><a href="index.html">Acasa</a></li>
-                <li class="item"><a href="lista_Filme.html">Lista Filme</a></li>
-                <li class="item"><a href="watchlist.html">Watchlist</a></li>
-                <li class="item"><a href="favorite.html">Favorite</a></li>
-                <li>
-                    <div class="item">
-                        Regizori
-                    </div>
-                    <ul class="dropdown_content">
-                        <li><a href="https://en.wikipedia.org/wiki/Quentin_Tarantino">Tarantino</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve">Villeneuve</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+	<%- include("../fragmente/header")  %>
 
     <main>
         <h1>Filmele de comedie</h1>
@@ -50,35 +32,42 @@
         <section>
             <h2>Poze:</h2>
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/hotfuzz.jpg">
-                <img src="Resources/Images/hotfuzz.jpg" alt="Hot Fuzz">
+            <a target="_blank" href="/Images/hotfuzz.jpg">
+                <img src="/Images/hotfuzz.jpg" alt="Hot Fuzz">
             </a>
             <div class="desc">Hot Fuzz, regizat de Edgar Wright </div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/21jumpstreet.jpg">
-                <img src="Resources/Images/21jumpstreet.jpg" alt="21 Jump Street">
+            <a target="_blank" href="/Images/21jumpstreet.jpg">
+                <img src="/Images/21jumpstreet.jpg" alt="21 Jump Street">
             </a>
             <div class="desc">21 Jump Street, regizat de Phil Lord si Christopher Miller</div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/moderntimes.jpg">
-                <img src="Resources/Images/moderntimes.jpg" alt="Modern Times">
+            <a target="_blank" href="/Images/moderntimes.jpg">
+                <img src="/Images/moderntimes.jpg" alt="Modern Times">
             </a>
             <div class="desc">Modern Times, regizat de Charlie Chaplin</div>
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <div>
+		
+		<div id = "quiz">
+			<h2>QUIZ: </h2>
+			<p id="intrebare">Care este cel mai vechi gen de film?</p>
+			<label> Introduce raspunsul:
+			<input id="rasp" type="text" value="">
+			</label>
+			
+			<button id = "trimite">OK</button><br>
+		
+        </section>
+		<div>
             <p><a href="#Top">Inceputul paginii.</a></p>
         </div>
-        </section>
     </main>
 
-    <footer>
-        <p>Site facut de Hirhui Calin</p>
-
-    </footer>
+    <%- include("../fragmente/footer")  %>
 </body>
 </html>

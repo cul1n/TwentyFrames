@@ -4,6 +4,11 @@ body { /*serenity*/
     margin-right: 10%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -25,36 +30,32 @@ body { /*serenity*/
 .imag{
     height: 100%;
     width: 100%;
-  
+ 
 }
 header {
     border: 3px solid #437D95;
     background-color: #548BA2;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
-.meniu_dropdown {
+.meniudd {
     display: block;
     list-style-type: none;
     font-size: 1vw;
     text-align: center;
 }
 
-.dropdown_content { /*meniul drop down */
+.ddcontent { 
     display: none;
     z-index: 1;
     position: absolute;
+	color: white;
+	list-style-type: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    list-style-type: none;
-    color: white;
-    background-color: #bbddf9;
+    background-color: #bedffa;
+	border: 1px solid #81b8e6;
     text-align: center;
     padding: 0%;
-    border: 1px solid #85bcea;
     width: 6%;
 }
 
@@ -68,32 +69,68 @@ nav > ul > li {
     display: inline-block;
 }
 
-nav > ul > li > ul > li { /* fiecare item din meniul drop down */
-     padding: 2%;
-     border: 1px solid #a8d1f4;
+nav > ul > li > ul > li { 
+     border: 1px solid #9fc9ed;
 }
 
 nav > ul > li > ul > li:hover {
-     background-color: #85c1f2;
+     background-color: #81bef0;
 }
 
 ul > li:nth-child(even) {
-    background-color: #9ecef7;
+    background-color: #9dccf5;
 }
 
 ul > li:nth-child(odd) {
-    background-color: #afdaff;
+    background-color: #b0daff;
 }
 
 .item {
     color: white;
-    border: 1px solid #91c1ea;
+    border: 1px solid #8dbbe3;
     padding: 20px;
     font-size: 1.1vw;
 }
 
 .item:hover {
-     background-color: #85bcea;
+     background-color: #83b9e6;
+}
+
+.afis{
+
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #437D95;
+}
+
+.templ_film{
+
+        background-color: #f1f1f1;
+        width: 20%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border: 2.5px solid black;
+}
+
+.selectat{
+	background-color: orange;
+
+}
+
+.current{
+	border-color: yellow;
+
+}
+
+
+.imag2{
+    height: 25%;
+    width: 60%;
+ 
 }
 
 /*RESPONSIVE*/

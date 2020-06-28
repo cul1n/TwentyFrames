@@ -1,40 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="Resources/Images/favicon2.ico">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/galerie.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/galerie.css">
     <meta name="author" content="Hirhui Calin">
     <meta name="keywords" content="Filme,cinematografie,animatie,2d,comedie,istoric">
     <meta name="description" content="Aceasta pagina prezinta un scurt istoric pentru filmele de animatie.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script3.js"></script>
     <title>Animatie</title>
 </head>
 	
     <body> 
 
-    <header>
-        <h1>Twenty Frames</h1>
-        <nav>
-            <ul class="meniu_dropdown">
-                <li class="item"><a href="index.html">Acasa</a></li>
-                <li class="item"><a href="lista_Filme.html">Lista Filme</a></li>
-                <li class="item"><a href="watchlist.html">Watchlist</a></li>
-                <li class="item"><a href="favorite.html">Favorite</a></li>
-                <li>
-                    <div class="item">
-                        Regizori
-                    </div>
-                    <ul class="dropdown_content">
-                        <li><a href="https://en.wikipedia.org/wiki/Quentin_Tarantino">Tarantino</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve">Villeneuve</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <%- include("../fragmente/header")  %>
 
     <main>
         <h1>Filmele de animatie</h1>
@@ -53,22 +35,22 @@
         <section>
             <h2>Poze:</h2>
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/toystory3.jpg">
-                <img src="Resources/Images/toystory3.jpg" alt="Toy Story 3">
+            <a target="_blank" href="/Images/toystory3.jpg">
+                <img src="/Images/toystory3.jpg" alt="Toy Story 3">
             </a>
             <div class="desc">Toy Story 3 (2010)</div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/legomovie.jpg">
-                <img src="Resources/Images/legomovie.jpg" alt="The Lego Movie">
+            <a target="_blank" href="/Images/legomovie.jpg">
+                <img src="/Images/legomovie.jpg" alt="The Lego Movie">
             </a>
             <div class="desc">The Lego Movie (2014)</div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/bb.jpg">
-                <img src="Resources/Images/bb.jpg" alt="Beauty and the Beast">
+            <a target="_blank" href="/Images/bb.jpg">
+                <img src="/Images/bb.jpg" alt="Beauty and the Beast">
             </a>
             <div class="desc">Beauty and the Beast (1991)</div>
         </div>
@@ -79,9 +61,6 @@
         </section>
     </main>
 
-    <footer>
-        <p>Site facut de Hirhui Calin</p>
-
-    </footer>
+    <%- include("../fragmente/footer")  %>
 </body>
 </html>

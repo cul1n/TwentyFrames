@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,cinematografie,actori,directori,genuri,lista">
+    <meta name="description" content="Aici putem gasi filmele ordonate pe categorii.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script.js"></script>
+    <title>Lista de filme</title>
+</head>
+
+<body>
+    <%- include("../fragmente/header")  %>
+
+    <main>
+
+        <section>
+            <h2>Genuri de film</h2>
+            <ul>
+                <li><a href="actiune">Actiune</a></li>
+                <li><a href="drama">Drama</a></li>
+                <li><a href="comedie">Comedie</a></li>
+                <li><a href="animatie">Animatie</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Top Regizori</h2>
+            <ul>
+                <li>Hitchcock</li>
+                <li>Tarantino</li>
+                <li>Nolan</li>
+                <li>Scorsese</li>
+                <li>Kubrik</li>
+                <li>Villeneuve</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Actori Populari</h2>
+            <ul>
+                <li>Leondaro DiCaprio</li>
+                <li>Jake Gyllenhaal</li>
+                <li>Brad Pitt</li>
+                <li>Margot Robbie</li>
+                <li>Joaquin Pheonix</li>
+            </ul>
+        </section>
+		<section>
+			<h2>JSON</h2>
+			<p>Continut JSON</p>
+			<!-- aici se va afisa continutul neprocesat al JSON-ului -->
+			<div class="afis" id="afisJson">
+			</div>
+			
+			<p>Cu template:</p>
+			<label>Alege sortarea
+			<select id="selectare">
+				<option value="1" selected>Regizor</option>
+				<option value="2">An</option>
+				<option value="3">Nume</option>
+			</select>
+			</label>
+			
+			<button id = "ssorteaza">Sorteaza </button><br>
+			
+			<label> Introduce regizor:
+			<input id="reg" type="text" value="">
+			</label>
+			
+			<button id = "arata">Arata</button><br>
+			
+			<button id = "reset">Reseteaza</button>
+			
+			<section id="sec1">
+				<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+				<div class="afis" id="afisTemplate">
+				</div>
+				<br><p id = "eps"></p>
+				<div id = "ca">
+				<button id = "calcul">Calculeaza media notelor</button><br><br>
+				<div>
+			</section>
+	   </section>
+    </main>
+
+	<%- include("../fragmente/footer")  %>
+</body>
+</html>

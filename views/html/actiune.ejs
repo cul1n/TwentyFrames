@@ -1,40 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="Resources/Images/favicon2.ico">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="Resources/CSS/galerie.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/galerie.css">
     <meta name="author" content="Hirhui Calin">
     <meta name="keywords" content="Filme,cinematografie,actiune,erou,cgi,conflict">
     <meta name="description" content="Aceasta pagina prezinta un scurt istoric pentru filmele de actiune.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog de filme</title>
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script3.js"></script>
+    <title>Actiune</title>
 </head>
 	
     <body> 
 
-    <header>
-        <h1>Twenty Frames</h1>
-        <nav>
-            <ul class="meniu_dropdown">
-                <li class="item"><a href="index.html">Acasa</a></li>
-                <li class="item"><a href="lista_Filme.html">Lista Filme</a></li>
-                <li class="item"><a href="watchlist.html">Watchlist</a></li>
-                <li class="item"><a href="favorite.html">Favorite</a></li>
-                <li>
-                    <div class="item">
-                        Regizori
-                    </div>
-                    <ul class="dropdown_content">
-                        <li><a href="https://en.wikipedia.org/wiki/Quentin_Tarantino">Tarantino</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve">Villeneuve</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <%- include("../fragmente/header")  %>
 
     <main>
         <h1>Filmele de actiune</h1>
@@ -56,22 +38,22 @@
         <section>
             <h2>Poze:</h2>
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/jamesbond.jpg">
-                <img src="Resources/Images/jamesbond.jpg" alt="Skyfall">
+            <a target="_blank" href="/Images/jamesbond.jpg">
+                <img src="/Images/jamesbond.jpg" alt="Skyfall">
             </a>
             <div class="desc">Daniel Craig in "Skyfall"</div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/infinitywar.jpg">
-                <img src="Resources/Images/infinitywar.jpg" alt="Infinity War">
+            <a target="_blank" href="/Images/infinitywar.jpg">
+                <img src="/Images/infinitywar.jpg" alt="Infinity War">
             </a>
             <div class="desc">Chris Hemsworth in "Infinity War"</div>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="Resources/Images/killbill.jpg">
-                <img src="Resources/Images/killbill.jpg" alt="Kill Bill">
+            <a target="_blank" href="/Images/killbill.jpg">
+                <img src="/Images/killbill.jpg" alt="Kill Bill">
             </a>
             <div class="desc">Uma Thurman in "Kill Bill"</div>
         </div>
@@ -82,9 +64,6 @@
         </section>
     </main>
 
-    <footer>
-        <p>Site facut de Hirhui Calin</p>
-
-    </footer>
+    <%- include("../fragmente/footer")  %>
 </body>
 </html>

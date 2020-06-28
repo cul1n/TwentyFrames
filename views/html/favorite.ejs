@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/tabele.css">
+    <meta name="author" content="Hirhui Calin">
+    <meta name="keywords" content="Filme,cinematografie,lista,favorite,rating,personal">
+    <meta name="description" content="Aceasta pagina cuprinde o lista unde utilizatorul isi poate adauga filmele favorite">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script3.js"></script>
+    <title>Filme favorite</title>
+</head>
+
+<body>
+    
+	<%- include("../fragmente/header")  %>
+
+    <main>
+        <section>
+            <h2>Filme Favorite</h2>
+
+            <p>Aici poti adauga filmele tale favorite. </p>
+            <button>Adauga</button>
+            <p></p>
+            <table>
+                <caption>Tabel cu filme</caption>
+                <thead>
+                    <tr>
+                        <th>Nr. de ordine</th>
+                        <th>Date film</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1.</td>
+                        <td>Parsite</td>
+                        <td rowspan="2">10/10</td>
+                    </tr>
+                    <tr>
+                        <td>Regie si scenariu: Bong Joon Ho</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2.</td>
+                        <td>Lord of The Rings: Return of The King</td>
+                        <td rowspan="2">9/10</td>
+                    </tr>
+                    <tr>
+                        <td>Regie: Peter Jackson, Scenariu: Fran Walsh</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3.</td>
+                        <td>Taxi Driver</td>
+                        <td rowspan="2">9/10</td>
+                    </tr>
+                    <tr>
+                        <td>Regie: Martin Scorsese, Scenariu: Paul Schrader</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <%- include("../fragmente/footer")  %>
+	
+</body>
+</html>
